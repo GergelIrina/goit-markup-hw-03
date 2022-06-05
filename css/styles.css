@@ -54,8 +54,6 @@ img{
 .header{
     background-color:var(--white-color);
 
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -150,13 +148,12 @@ img{
 .hero{
     text-align: center;
     background:var(--accent-bgc-color) ;
-}
 
-.hero-content{
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 
 }
+
 
 .hero-title{
     color: var(--white-color);
@@ -205,6 +202,15 @@ img{
     flex-wrap: nowrap;
 }
 
+.feature-list .item{
+    height: 101px;
+    width: 270px;
+}
+
+.feature-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
 .feature-list .title{
     color: var(--title-text-color);
 
@@ -226,6 +232,10 @@ img{
 
 /* What are we doing? */
 
+.work{
+    padding-top: 0;
+}
+
 .section .list{
     display: flex;
     flex-wrap: nowrap;
@@ -244,13 +254,12 @@ img{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
+}
+
+.worker-data:not(:last-child){
     margin-right: 30px;
 }
 
-.photo{
-    margin-bottom: 30px;
-}
 
 .worker-list .title{
     color:var(--title-text-color);
@@ -269,12 +278,16 @@ img{
     letter-spacing: 0.03em;
     text-align: center;
 
-    margin-bottom: 30px;
+}
+
+.content{
+    padding: 30px 0px;
 }
 
 /* Portfolio */
 
-.product-section{
+
+.section .product-list{
     display: flex;
     flex-wrap: wrap;
 }
@@ -307,9 +320,7 @@ img{
     line-height: 2;
     letter-spacing: 0.06em;
     
-    
-    margin-top: 20px;
-    margin-left: 24px;
+    margin-bottom: 4px;
 }
 
 .product-list .text{
@@ -318,13 +329,15 @@ img{
     line-height: 1.87;
     letter-spacing: 0.03em;
     
+}
 
-    margin-top: 4px;
-    margin-left: 24px;
+.product-content{
+    padding: 20px 24px;
 }
 
 .button.primary{
     border-radius: 4px;
+    border: 0cm;
     padding: 10px 32px;
     display: block;
     margin: 0 auto;
@@ -338,12 +351,14 @@ img{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
 }
 
 .button.primary:hover,
 .button.primary:focus{
     background-color: var(--button-hover-color);
     color:var(--white-color); 
+
 }
 
 .section .buttons{
@@ -354,12 +369,13 @@ img{
 
 .filter-button{
     border-radius: 4px;
+    border: 0cm;
     padding: 6px 22px;
     display: block;
     padding: 6px 22px;
     margin-right: 8px;
 
-    background-color: var(--buttons-bcg-color);
+    background-color: var(--section-color);
     color: var(--title-text-color); 
     cursor: pointer;
 
@@ -417,7 +433,7 @@ img{
     flex-direction: column;
 }
 
-.footer-item{
+.footer-item:not(:first-child){
     margin-top: 9px;
 }
 
@@ -428,6 +444,7 @@ img{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    text-decoration: none;
 }
 
 .address:hover,
